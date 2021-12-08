@@ -1,12 +1,15 @@
 
 import { ChevronRightIcon, InfoIcon } from '@chakra-ui/icons';
-import { Box, Button, Container, Heading, Text, List, ListItem, Link } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Text, List, ListItem, Link, Image } from '@chakra-ui/react';
 import { VscGithub } from 'react-icons/vsc';
 import { AiFillLinkedin } from 'react-icons/ai';
 import NextLink from 'next/link';
 import ExperienceEntry from 'components/expentry';
 import Main from 'components/layouts/main';
 import { SlideIn } from 'components/animated';
+
+import styles from '../components/styles/images.module.css';
+import me from '../public/images/me.jpg';
 
 /**
 * @file index.js
@@ -21,18 +24,25 @@ const Home = () => {
       <Container px={8} pt={20} maxW='container.md'>
 
         <SlideIn delay={0} time={1} direction='right'>
-          <Box display='flex' flexDirection='column'>
-            <Heading as='h1' fontSize={{ base: '5xl' }}>
-              Devin Arena
-            </Heading>
-            <Text fontSize={{ base: 'xl', md: '2xl' }}>
-              Student and Software Engineer
-            </Text>
+          <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='space-between' alignItems='center'>
+            <Box display='flex' flexDirection='column'>
+              <Heading as='h1' fontSize={{ base: '5xl' }}>
+                Devin Arena
+              </Heading>
+              <Text fontSize={{ base: 'xl', md: '2xl' }}>
+                Student and Software Engineer
+              </Text>
+            </Box>
+            <Box>
+              <Image src='/images/me.jpg' borderWidth='5px'
+                borderStyle='solid' borderColor='blue.700'
+                borderRadius='50%' maxW={200} mt={3}></Image>
+            </Box>
           </Box>
         </SlideIn>
 
         <SlideIn delay={0.4} time={1} direction='left'>
-          <Box mt={8}>
+          <Box mt={4}>
             <Heading as='h3' variant='sectionTitle'>
               About
             </Heading>
