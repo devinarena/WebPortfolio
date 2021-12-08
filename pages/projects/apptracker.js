@@ -71,9 +71,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/AppTracker' passHref>
+                            <NextLink href='https://projects.devinarena.com/AppTracker' passHref>
                                 <Link ml={2}>
-                                    https://devinarena.com/AppTracker
+                                    https://projects.devinarena.com/AppTracker
                                 </Link>
                             </NextLink>
                         </Flex>

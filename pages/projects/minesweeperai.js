@@ -70,9 +70,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/MinesweeperAI' passHref>
+                            <NextLink href='https://projects.devinarena.com/MinesweeperAI' passHref>
                                 <Link ml={2} fontSize={{ base: 'sm', md: 'lg' }}>
-                                    https://devinarena.com/MinesweeperAI
+                                    https://projects.devinarena.com/MinesweeperAI
                                 </Link>
                             </NextLink>
                         </Flex>

@@ -21,7 +21,7 @@ const UseRoux = () => {
                         <Heading as='h1' whiteSpace='nowrap'>
                             UseRoux
                         </Heading>
-                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{base: 'lg', md: 'xl'}}>
+                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{ base: 'lg', md: 'xl' }}>
                             October 2021 -
                         </Heading>
                     </Box>
@@ -71,9 +71,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/UseRoux' passHref>
+                            <NextLink href='https://projects.devinarena.com/UseRoux' passHref>
                                 <Link ml={2}>
-                                    https://devinarena.com/UseRoux
+                                    https://projects.devinarena.com/UseRoux
                                 </Link>
                             </NextLink>
                         </Flex>
