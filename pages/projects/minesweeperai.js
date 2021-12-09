@@ -71,7 +71,7 @@ const UseRoux = () => {
                                 Link
                             </Text>
                             <NextLink href='https://projects.devinarena.com/MinesweeperAI' passHref>
-                                <Link ml={2} fontSize={{ base: 'sm', md: 'lg' }}>
+                                <Link ml={2} overflowWrap='anywhere' textAlign='center'>
                                     https://projects.devinarena.com/MinesweeperAI
                                 </Link>
                             </NextLink>

@@ -52,7 +52,7 @@ const Navbar = () => {
                             LinkedIn
                         </Link>
                     </NextLink>
-                    <NextLink href='https://github.com/devinarena/devinarena.github.io/' passHref>
+                    <NextLink href='https://github.com/devinarena/WebPortfolio/' passHref>
                         <Link display='inline-flex' alignItems='center' style={{ gap: 4 }}>
                             <VscCode />
                             Source
@@ -88,7 +88,7 @@ const Navbar = () => {
                                         LinkedIn
                                     </MenuItem>
                                 </NextLink>
-                                <NextLink href="https://github.com/devinarena/devinarena.github.io/" passHref>
+                                <NextLink href="https://github.com/devinarena/WebPortfolio/" passHref>
                                     <MenuItem as={Link} display='inline-flex'
                                         alignItems='center' style={{ gap: 4 }}>
                                         <VscCode />

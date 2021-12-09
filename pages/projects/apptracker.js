@@ -72,7 +72,7 @@ const UseRoux = () => {
                                 Link
                             </Text>
                             <NextLink href='https://projects.devinarena.com/AppTracker' passHref>
-                                <Link ml={2}>
+                                <Link ml={2} overflowWrap='anywhere' textAlign='center'>
                                     https://projects.devinarena.com/AppTracker
                                 </Link>
                             </NextLink>

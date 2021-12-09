@@ -87,7 +87,7 @@ const Home = () => {
               Hobbies
             </Heading>
             <Text>
-              Game Development, Building Apps &amp; Websites, Speedcubing, Writing Music, Playing Piano, Soccer
+              Game Development, Developing Apps &amp; Websites, Speedcubing, Music Composition, Piano, Soccer
             </Text>
           </Box>
         </SlideIn>
@@ -106,7 +106,7 @@ const Home = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/devinarena/devinarena.github.io" display='inline-flex'
+                <Link href="https://github.com/devinarena" display='inline-flex'
                   alignItems='center' style={{ gap: 4 }} fontSize='2xl'>
                   <VscGithub />
                   GitHub
