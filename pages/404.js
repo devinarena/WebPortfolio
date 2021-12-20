@@ -30,7 +30,7 @@ const Home = () => {
                             404
                         </Heading>
                         <Text>
-                            This resource could not be found :(
+                            This resource could not be found
                         </Text>
                         <Text>
                             Here&apos;s a picture of my dogs though! :)

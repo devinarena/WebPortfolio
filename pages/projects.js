@@ -9,7 +9,7 @@ import minesweeperAI from '../public/images/minesweeperai_card.png';
 import apptracker from '../public/images/apptracker-desktop.png';
 import pixelstriker from '../public/images/pixelstriker_card.png';
 import productlog from '../public/images/productlog_card.png';
-import telegramcounter from '../public/images/telegramcounter_card.png';
+import pixelbackground from '../public/images/pixelbackground_card.png';
 import useroux from '../public/images/useroux_card.png';
 import { Grow, SlideIn } from 'components/animated';
 
@@ -63,23 +63,23 @@ const Projects = () => {
                         </ProjectItem>
                     </Grow>
                     <Grow delay={0.6} time={0.8}>
+                        <ProjectItem image={pixelbackground} title='Pixel Background' id='pixelbackground'>
+                            Generate amazing pixel art wallpapers using images from your favorite subreddits.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={0.8} time={0.8}>
                         <ProjectItem image={apptracker} title='AppTracker' id='apptracker'>
                             A useful web application for tracking internship/job applications I built for myself.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={0.8} time={0.8}>
+                    <Grow delay={1.0} time={0.8}>
                         <ProjectItem image={pixelstriker} title='Pixel Striker' id='pixelstriker'>
                             Shoot and save goals in an endless arcade-style soccer app for Android.
                         </ProjectItem>
                     </Grow>
-                    <Grow delay={1.0} time={0.8}>
+                    <Grow delay={1.2} time={0.8}>
                         <ProjectItem image={productlog} title='Product Log' id='productlog'>
                             Catalog purchases track collections using a fun barcode-scanning mobile app built with Flutter.
-                        </ProjectItem>
-                    </Grow>
-                    <Grow delay={1.2} time={0.8}>
-                        <ProjectItem image={telegramcounter} title='Telegram Counter' id='telegramcounter'>
-                            Analyze messaging trends using a simple, lightweight Python script.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={1.4} time={0.8}>
