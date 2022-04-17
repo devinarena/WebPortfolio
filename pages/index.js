@@ -66,7 +66,7 @@ const Home = () => {
               My name is Devin Arena, and I&apos;m currently a student and
               software engineer based in Naples, Florida. I currently attend
               Florida Gulf Coast University pursuing a Bachelor&apos;s of
-              Science in Software Engineering. I've been programming and
+              Science in Software Engineering. I&apos;ve been programming and
               tinkering with computers since I was a kid and have always enjoyed
               it. In my freetime, I like to learn about embedded systems, linux,
               and computer hardware.
