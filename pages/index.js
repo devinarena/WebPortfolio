@@ -17,9 +17,6 @@ import ExperienceEntry from "components/expentry";
 import Main from "components/layouts/main";
 import { SlideIn } from "components/animated";
 
-import styles from "../components/styles/images.module.css";
-import me from "../public/images/me.jpg";
-
 /**
  * @file index.js
  * @author Devin Arena
@@ -48,6 +45,7 @@ const Home = () => {
             <Box>
               <Image
                 src="/images/me.jpg"
+                alt="Devin Arena"
                 borderWidth="5px"
                 borderStyle="solid"
                 borderColor="blue.700"
