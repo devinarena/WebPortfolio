@@ -16,6 +16,7 @@ import NextLink from "next/link";
 import ExperienceEntry from "components/expentry";
 import Main from "components/layouts/main";
 import { SlideIn } from "components/animated";
+import ThreeLanding from "components/threeLanding";
 
 /**
  * @file index.js
@@ -27,6 +28,10 @@ const Home = () => {
   return (
     <Main title="Homepage">
       <Container px={8} pt={20} maxW="container.md">
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <ThreeLanding />
+        </Box>
+
         <SlideIn delay={0} time={1} direction="right">
           <Box
             display="flex"

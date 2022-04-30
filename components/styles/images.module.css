@@ -1,3 +1,7 @@
+.threeCanvas {
+    background-image: radial-gradient(circle min(30vw, 20vh) at center, #000, transparent);
+}
+
 .projectCard {
     border-radius: 10px;
 }

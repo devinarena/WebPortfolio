@@ -13,7 +13,8 @@ const fonts = {
 };
 
 const config = {
-  initialColorMode: "system",
+  initialColorMode: "dark",
+  useColorModeValue: true,
 };
 
 const components = {
