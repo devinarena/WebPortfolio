@@ -1,5 +1,5 @@
 .threeCanvas {
-    background-image: radial-gradient(circle min(30vw, 20vh) at center, #000, transparent);
+    background-image: radial-gradient(circle min(30vw, 20vh) at center, rgba(0.5, 0.5, 0.5, 0.5), transparent);
 }
 
 .projectCard {
