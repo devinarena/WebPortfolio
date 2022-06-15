@@ -10,7 +10,7 @@ import mobile from '../../public/images/apptracker-mobile.png';
 import upload from '../../public/images/apptracker-edit.png';
 import { Grow, SlideIn } from "components/animated";
 
-const UseRoux = () => {
+const AppTracker = () => {
 
     return (
         <Main title='AppTracker'>
@@ -125,4 +125,4 @@ const UseRoux = () => {
     );
 };
 
-export default UseRoux;
+export default AppTracker;

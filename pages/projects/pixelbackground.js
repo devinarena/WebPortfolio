@@ -9,7 +9,7 @@ import set from '../../public/images/pixelbackground_set.png';
 import save from '../../public/images/pixelbackground_save.png';
 import { Grow, SlideIn } from "components/animated";
 
-const UseRoux = () => {
+const PixelBackground = () => {
 
     return (
         <Main title='Pixel Background'>
@@ -118,4 +118,4 @@ const UseRoux = () => {
     );
 };
 
-export default UseRoux;
+export default PixelBackground;

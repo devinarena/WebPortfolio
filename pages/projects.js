@@ -19,7 +19,7 @@ import apptracker from "../public/images/apptracker-desktop.png";
 import pixelstriker from "../public/images/pixelstriker_card.png";
 import productlog from "../public/images/productlog_card.png";
 import pixelbackground from "../public/images/pixelbackground_card.png";
-import useroux from "../public/images/useroux_card.png";
+import rouxsolver from "../public/images/rouxsolver_card.png";
 import { Grow, SlideIn } from "components/animated";
 
 /**
@@ -74,9 +74,9 @@ const Projects = () => {
 
         <SimpleGrid mt={8} columns={[1, 2, 2, 3]} gap={5}>
           <Grow delay={0.4} time={0.8}>
-            <ProjectItem image={useroux} title="UseRoux" id="useroux">
-              A SpeedSolving guide, giving examples of how to solve a
-              Rubik&apos;s cube properly in a cool 3D simulator.
+            <ProjectItem image={rouxsolver} title="RouxSolver" id="rouxsolver">
+              An interactive 3D speedcubing simulator with a built in Roux
+              solver.
             </ProjectItem>
           </Grow>
           <Grow delay={0.6} time={0.8}>

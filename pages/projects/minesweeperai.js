@@ -9,7 +9,7 @@ import image1 from '../../public/images/minesweeperai.png';
 import image2 from '../../public/images/minesweeperai2.png';
 import { Grow, SlideIn } from "components/animated";
 
-const UseRoux = () => {
+const MinesweeperAI = () => {
 
     return (
         <Main title='Minesweeper AI'>
@@ -118,4 +118,4 @@ const UseRoux = () => {
     );
 };
 
-export default UseRoux;
+export default MinesweeperAI;

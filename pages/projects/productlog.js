@@ -11,7 +11,7 @@ import product from '../../public/images/productlog_product.png';
 import stats from '../../public/images/productlog_stats.png';
 import { Grow, SlideIn } from "components/animated";
 
-const UseRoux = () => {
+const ProductLog = () => {
 
     return (
         <Main title='Product Log'>
@@ -132,4 +132,4 @@ const UseRoux = () => {
     );
 };
 
-export default UseRoux;
+export default ProductLog;

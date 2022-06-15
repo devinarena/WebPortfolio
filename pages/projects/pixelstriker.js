@@ -10,7 +10,7 @@ import game from '../../public/images/pixelstriker.png';
 import goalie from '../../public/images/pixelstriker_goalie.png';
 import { Grow, SlideIn } from "components/animated";
 
-const UseRoux = () => {
+const PixelStriker = () => {
 
     return (
         <Main title='Pixel Striker'>
@@ -125,4 +125,4 @@ const UseRoux = () => {
     );
 };
 
-export default UseRoux;
+export default PixelStriker;
