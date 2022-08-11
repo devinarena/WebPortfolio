@@ -18,7 +18,7 @@ import minesweeperAI from "../public/images/minesweeperai_card.png";
 import apptracker from "../public/images/apptracker-desktop.png";
 import pixelstriker from "../public/images/pixelstriker_card.png";
 import productlog from "../public/images/productlog_card.png";
-import pixelbackground from "../public/images/pixelbackground_card.png";
+import tgraph from "../public/images/tgraph_card.png";
 import rouxsolver from "../public/images/rouxsolver_card.png";
 import { Grow, SlideIn } from "components/animated";
 
@@ -66,8 +66,7 @@ const Projects = () => {
               Projects
             </Heading>
             <Text fontSize={{ base: "kg", md: "xl" }}>
-              These are a collection of the projects I&apos;ve built and am most
-              proud of.
+              Some of my best and most interesting software projects.
             </Text>
           </Box>
         </SlideIn>
@@ -80,6 +79,11 @@ const Projects = () => {
             </ProjectItem>
           </Grow>
           <Grow delay={0.6} time={0.8}>
+            <ProjectItem image={tgraph} title="TGraph" id="tgraph">
+              A C++ command-line interface for graphing equations.
+            </ProjectItem>
+          </Grow>
+          {/* <Grow delay={0.6} time={0.8}>
             <ProjectItem
               image={pixelbackground}
               title="Pixel Background"
@@ -88,11 +92,10 @@ const Projects = () => {
               Generate amazing pixel art wallpapers using images from your
               favorite subreddits.
             </ProjectItem>
-          </Grow>
+          </Grow> */}
           <Grow delay={0.8} time={0.8}>
             <ProjectItem image={apptracker} title="AppTracker" id="apptracker">
-              A useful web application for tracking internship/job applications
-              I built for myself.
+              A web application for tracking internship/job applications.
             </ProjectItem>
           </Grow>
           <Grow delay={1.0} time={0.8}>
@@ -101,14 +104,12 @@ const Projects = () => {
               title="Pixel Striker"
               id="pixelstriker"
             >
-              Shoot and save goals in an endless arcade-style soccer app for
-              Android.
+              An endless arcade-style mobile soccer game.
             </ProjectItem>
           </Grow>
           <Grow delay={1.2} time={0.8}>
             <ProjectItem image={productlog} title="Product Log" id="productlog">
-              Catalog purchases track collections using a fun barcode-scanning
-              mobile app built with Flutter.
+              A mobile application for tracking product purchases and collections.
             </ProjectItem>
           </Grow>
           <Grow delay={1.4} time={0.8}>
@@ -117,8 +118,7 @@ const Projects = () => {
               title="Minesweeper AI"
               id="minesweeperai"
             >
-              An AI that solves mineweeper puzzles using real tactics. Built
-              using vanilla JavaScript.
+              An AI that solves mineweeper puzzles using real tactics.
             </ProjectItem>
           </Grow>
         </SimpleGrid>
