@@ -5,9 +5,9 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import menu from '../../public/images/pixelstriker_menu.png';
-import game from '../../public/images/pixelstriker.png';
-import goalie from '../../public/images/pixelstriker_goalie.png';
+import menu from '../../../public/images/pixelstriker_menu.png';
+import game from '../../../public/images/pixelstriker.png';
+import goalie from '../../../public/images/pixelstriker_goalie.png';
 import { Grow, SlideIn } from "components/animated";
 
 const PixelStriker = () => {
