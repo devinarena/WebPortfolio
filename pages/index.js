@@ -17,6 +17,7 @@ import ExperienceEntry from "components/expentry";
 import Main from "components/layouts/main";
 import { SlideIn } from "components/animated";
 import ThreeLanding from "components/threeLanding";
+import Parallax from "components/parallax";
 
 /**
  * @file index.js
@@ -27,6 +28,8 @@ import ThreeLanding from "components/threeLanding";
 const Home = () => {
   return (
     <Main title="Homepage">
+      <Parallax />
+
       <Container px={8} pt={20} maxW="container.md">
         <Box display="flex" justifyContent="center" alignItems="center">
           <ThreeLanding />
