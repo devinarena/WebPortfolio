@@ -60,21 +60,21 @@ const TGraph = () => {
 
         <Box mt={8}>
           <SlideIn delay={0.8} time={1} direction="right">
-            <Flex align="center">
+            <Flex alignItems="center">
               <Text variant="projectLabel">Platform</Text>
               <Text ml={2}>Native Application</Text>
             </Flex>
           </SlideIn>
           <SlideIn delay={0.9} time={1} direction="left">
-            <Flex align="center" mt={1}>
+            <Flex alignItems="center" mt={1}>
               <Text variant="projectLabel">Tech Stack</Text>
               <Text ml={2}>C++</Text>
             </Flex>
           </SlideIn>
           <SlideIn delay={1.0} time={1} direction="right">
-            <Flex align="center" mt={1}>
+            <Flex alignItems="center" mt={1}>
               <Text variant="projectLabel">Link</Text>
-              <NextLink href="https://github.com/devinarena/TGraph" passHref>
+              <NextLink legacyBehavior href="https://github.com/devinarena/TGraph" passHref>
                 <Link ml={2} overflowWrap="anywhere" textAlign="center">
                   https://github.com/devinarena/TGraph
                 </Link>
@@ -82,9 +82,9 @@ const TGraph = () => {
             </Flex>
           </SlideIn>
           <SlideIn delay={1.1} time={1} direction="left">
-            <Flex align="center" mt={1}>
+            <Flex alignItems="center" mt={1}>
               <Text variant="projectLabel">Source</Text>
-              <NextLink href="https://github.com/devinarena/TGraph" passHref>
+              <NextLink legacyBehavior href="https://github.com/devinarena/TGraph" passHref>
                 <Link ml={2}>GitHub</Link>
               </NextLink>
             </Flex>
@@ -110,10 +110,10 @@ const TGraph = () => {
         </Grow>
 
         <Grow delay={1.9} time={1}>
-          <Box mt={4} align="center">
-            <NextLink href="/projects" passHref>
+          <Box mt={4} alignItems="center">
+            <NextLink legacyBehavior href="/projects" passHref>
               <Button
-                align="center"
+                alignItems="center"
                 leftIcon={<ChevronLeftIcon />}
                 colorScheme="blue"
               >

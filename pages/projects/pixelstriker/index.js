@@ -47,7 +47,7 @@ const PixelStriker = () => {
 
                 <Box mt={8}>
                     <SlideIn delay={0.8} time={1} direction='right'>
-                        <Flex align='center'>
+                        <Flex alignItems='center'>
                             <Text variant='projectLabel'>
                                 Platform
                             </Text>
@@ -57,7 +57,7 @@ const PixelStriker = () => {
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={0.9} time={1} direction='left'>
-                        <Flex align='center' mt={1}>
+                        <Flex alignItems='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Tech Stack
                             </Text>
@@ -67,11 +67,11 @@ const PixelStriker = () => {
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={1.0} time={1} direction='right'>
-                        <Flex align='center' mt={1}>
+                        <Flex alignItems='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='https://play.google.com/store/apps/details?id=io.github.devinarena.pixelstriker' passHref>
+                            <NextLink legacyBehavior href='https://play.google.com/store/apps/details?id=io.github.devinarena.pixelstriker' passHref>
                                 <Link ml={2}>
                                     Google Play Store
                                 </Link>
@@ -79,11 +79,11 @@ const PixelStriker = () => {
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={1.1} time={1} direction='left'>
-                        <Flex align='center' mt={1}>
+                        <Flex alignItems='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Source
                             </Text>
-                            <NextLink href='https://github.com/devinarena/Pixel-Striker' passHref>
+                            <NextLink legacyBehavior href='https://github.com/devinarena/Pixel-Striker' passHref>
                                 <Link ml={2}>
                                     GitHub
                                 </Link>
@@ -111,9 +111,9 @@ const PixelStriker = () => {
                 </Grow>
 
                 <Grow delay={1.9} time={1}>
-                    <Box mt={4} align='center'>
-                        <NextLink href='/projects' passHref>
-                            <Button align='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue'>
+                    <Box mt={4} alignItems='center'>
+                        <NextLink legacyBehavior href='/projects' passHref>
+                            <Button alignItems='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue'>
                                 Projects
                             </Button>
                         </NextLink>

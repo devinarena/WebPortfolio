@@ -48,7 +48,7 @@ const PixelBackground = () => {
 
                 <Box mt={8}>
                     <SlideIn delay={0.8} time={1} direction='right'>
-                        <Flex align='center'>
+                        <Flex alignItems='center'>
                             <Text variant='projectLabel'>
                                 Platform
                             </Text>
@@ -58,7 +58,7 @@ const PixelBackground = () => {
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={0.9} time={1} direction='left'>
-                        <Flex align='center' mt={1}>
+                        <Flex alignItems='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Tech Stack
                             </Text>
@@ -68,11 +68,11 @@ const PixelBackground = () => {
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={1.0} time={1} direction='right'>
-                        <Flex align='center' mt={1}>
+                        <Flex alignItems='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='https://sourceforge.net/projects/pixel-background/' passHref>
+                            <NextLink legacyBehavior href='https://sourceforge.net/projects/pixel-background/' passHref>
                                 <Link ml={2} overflowWrap='anywhere' textAlign='center' download>
                                     Download via SourceForge
                                 </Link>
@@ -80,11 +80,11 @@ const PixelBackground = () => {
                         </Flex>
                     </SlideIn>
                     <SlideIn delay={1.1} time={1} direction='left'>
-                        <Flex align='center' mt={1}>
+                        <Flex alignItems='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Source
                             </Text>
-                            <NextLink href='https://github.com/devinarena/PixelBackground' passHref>
+                            <NextLink legacyBehavior href='https://github.com/devinarena/PixelBackground' passHref>
                                 <Link ml={2}>
                                     GitHub
                                 </Link>
@@ -106,9 +106,9 @@ const PixelBackground = () => {
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
-                    <Box mt={4} align='center'>
-                        <NextLink href='/projects' passHref>
-                            <Button align='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue'>
+                    <Box mt={4} alignItems='center'>
+                        <NextLink legacyBehavior href='/projects' passHref>
+                            <Button alignItems='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue'>
                                 Projects
                             </Button>
                         </NextLink>

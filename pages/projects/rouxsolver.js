@@ -59,21 +59,21 @@ const RouxSolver = () => {
 
         <Box mt={8}>
           <SlideIn delay={0.8} time={1} direction="right">
-            <Flex align="center">
+            <Flex alignItems="center">
               <Text variant="projectLabel">Platform</Text>
               <Text ml={2}>Web Application</Text>
             </Flex>
           </SlideIn>
           <SlideIn delay={0.9} time={1} direction="left">
-            <Flex align="center" mt={1}>
+            <Flex alignItems="center" mt={1}>
               <Text variant="projectLabel">Tech Stack</Text>
               <Text ml={2}>Javascript, NodeJS, ThreeJS, Webpack</Text>
             </Flex>
           </SlideIn>
           <SlideIn delay={1.0} time={1} direction="right">
-            <Flex align="center" mt={1}>
+            <Flex alignItems="center" mt={1}>
               <Text variant="projectLabel">Link</Text>
-              <NextLink
+              <NextLink legacyBehavior
                 href="https://projects.devinarena.com/RouxSolver"
                 passHref
               >
@@ -84,9 +84,9 @@ const RouxSolver = () => {
             </Flex>
           </SlideIn>
           <SlideIn delay={1.1} time={1} direction="left">
-            <Flex align="center" mt={1}>
+            <Flex alignItems="center" mt={1}>
               <Text variant="projectLabel">Source</Text>
-              <NextLink
+              <NextLink legacyBehavior
                 href="https://github.com/devinarena/RouxSolver"
                 passHref
               >
@@ -109,10 +109,10 @@ const RouxSolver = () => {
         </Grow>
 
         <Grow delay={1.7} time={1}>
-          <Box mt={4} align="center">
-            <NextLink href="/projects" passHref>
+          <Box mt={4} alignItems="center">
+            <NextLink legacyBehavior href="/projects" passHref>
               <Button
-                align="center"
+                alignItems="center"
                 leftIcon={<ChevronLeftIcon />}
                 colorScheme="blue"
               >

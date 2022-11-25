@@ -17,7 +17,7 @@ const PixelStrikerPrivacyPolicy = () => {
             advertisements or any kind of data tracking. Pixel Striker only
             saves game-data locally on the users device. Pixel Striker is open
             source software
-            <NextLink
+            <NextLink legacyBehavior
               href="https://github.com/devinarena/Pixel-Striker"
               passHref
             >
@@ -50,7 +50,7 @@ const PixelStrikerPrivacyPolicy = () => {
           </Heading>
           <Text variant="indented">
             Any questions or concerns may be directed to{" "}
-            <NextLink href="mailto:devinarena03@gmail.com" passHref>
+            <NextLink legacyBehavior href="mailto:devinarena03@gmail.com" passHref>
               <Link>devinarena03@gmail.com</Link>
             </NextLink>
             .

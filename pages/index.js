@@ -17,7 +17,6 @@ import ExperienceEntry from "components/expentry";
 import Main from "components/layouts/main";
 import { SlideIn } from "components/animated";
 import ThreeLanding from "components/threeLanding";
-import Parallax from "components/parallax";
 
 /**
  * @file index.js
@@ -28,8 +27,6 @@ import Parallax from "components/parallax";
 const Home = () => {
   return (
     <Main title="Homepage">
-      <Parallax />
-
       <Container px={8} pt={20} maxW="container.md">
         <Box display="flex" justifyContent="center" alignItems="center">
           <ThreeLanding />
@@ -81,7 +78,7 @@ const Home = () => {
             </Text>
 
             <Box align="center" mt={3}>
-              <NextLink href="/projects" passHref>
+              <NextLink legacyBehavior href="/projects" passHref>
                 <Button
                   align="center"
                   rightIcon={<ChevronRightIcon />}
@@ -108,7 +105,7 @@ const Home = () => {
               Corporation Inc.
             </ExperienceEntry>
             <Box mt={3} align="center">
-              <NextLink href="/Resume.pdf" passHref>
+              <NextLink legacyBehavior href="/Resume.pdf" passHref>
                 <Button
                   align="center"
                   rightIcon={<InfoIcon />}

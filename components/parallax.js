@@ -5,10 +5,13 @@
  * @since 11/25/2022
  **/
 
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 
 const Parallax = () => {
-  return <Box></Box>;
+  return (<Box>
+    <Box>
+    </Box>
+  </Box>);
 };
 
 

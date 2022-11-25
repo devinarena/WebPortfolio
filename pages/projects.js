@@ -31,8 +31,8 @@ import { Grow, SlideIn } from "components/animated";
 const Projects = () => {
   const ProjectItem = ({ children, image, id, title }) => {
     return (
-      <Flex w="100%" direction="column" justify="flex-start" align="center">
-        <NextLink href={`projects/${id}`} passHref>
+      <Flex w="100%" direction="column" justify="flex-start" alignItems="center">
+        <NextLink legacyBehavior href={`projects/${id}`} passHref>
           <LinkBox
             cursor="pointer"
             textAlign="center"

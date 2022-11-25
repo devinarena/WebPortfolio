@@ -25,7 +25,7 @@ const Home = () => {
                     <Image className={styles.doggos} src={dogs} alt='Doggos' />
                 </Grow>
                 <SlideIn delay={0.2} time={0.4} direction='right'>
-                    <Flex direction='column' align='center'>
+                    <Flex direction='column' alignItems='center'>
                         <Heading as='h1'>
                             404
                         </Heading>
@@ -36,7 +36,7 @@ const Home = () => {
                             Here&apos;s a picture of my dogs though! :)
                         </Text>
                         <Link href='/' passHref>
-                            <Button align='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue' mt={5}>
+                            <Button alignItems='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue' mt={5}>
                                 Home
                             </Button>
                         </Link>
