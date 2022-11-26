@@ -11,7 +11,7 @@ import { Grow, SlideIn } from "components/animated";
 
 const RouxSolver = () => {
   return (
-    <Main title="RouxSolver">
+    <Main titleText="RouxSolver">
       <Container px={8} pt={20} maxW="container.md">
         <SlideIn delay={0} time={1} direction="right">
           <Box display="flex" flexDirection="row" alignItems="flex-end">

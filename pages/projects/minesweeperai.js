@@ -12,7 +12,7 @@ import { Grow, SlideIn } from "components/animated";
 const MinesweeperAI = () => {
 
     return (
-        <Main title='Minesweeper AI'>
+        <Main titleText='Minesweeper AI'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>

@@ -13,7 +13,7 @@ import { Grow, SlideIn } from "components/animated";
 const AppTracker = () => {
 
     return (
-        <Main title='AppTracker'>
+        <Main titleText='AppTracker'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>

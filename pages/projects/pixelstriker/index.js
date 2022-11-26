@@ -13,7 +13,7 @@ import { Grow, SlideIn } from "components/animated";
 const PixelStriker = () => {
 
     return (
-        <Main title='Pixel Striker'>
+        <Main titleText='Pixel Striker'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>

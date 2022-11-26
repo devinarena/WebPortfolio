@@ -5,7 +5,7 @@ import NextLink from "next/link";
 
 const PixelStrikerPrivacyPolicy = () => {
   return (
-    <Main title="Pixel Striker">
+    <Main titleText="Pixel Striker">
       <Container px={8} pt={20} maxW="container.md">
         <Heading as="h1" whiteSpace="nowrap">
           Pixel Striker Privacy Policy

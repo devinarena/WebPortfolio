@@ -19,7 +19,7 @@ import { Grow, SlideIn } from "components/animated";
 const Home = () => {
 
     return (
-        <Main title='Homepage'>
+        <Main titleText='Homepage'>
             <Container px={8} pt={20} maxW='container.md'>
                 <Grow delay={0} time={0.4}>
                     <Image className={styles.doggos} src={dogs} alt='Doggos' />

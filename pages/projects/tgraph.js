@@ -12,7 +12,7 @@ import { Grow, SlideIn } from "components/animated";
 
 const TGraph = () => {
   return (
-    <Main title="TGraph">
+    <Main titleText="TGraph">
       <Container px={8} pt={20} maxW="container.md">
         <SlideIn delay={0} time={1} direction="right">
           <Box display="flex" flexDirection="row" alignItems="flex-end">

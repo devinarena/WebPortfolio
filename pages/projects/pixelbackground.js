@@ -12,7 +12,7 @@ import { Grow, SlideIn } from "components/animated";
 const PixelBackground = () => {
 
     return (
-        <Main title='Pixel Background'>
+        <Main titleText='Pixel Background'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <Heading as="h1">Boy what might happen to this page?</Heading>

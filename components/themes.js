@@ -21,7 +21,7 @@ const components = {
   Heading: {
     variants: {
       sectionTitle: {
-        fontSize: 25,
+        fontSize: { base: "2xl", md: "3xl" },
         textDecoration: "underline",
         textUnderlineOffset: 8,
         textDecorationThickness: 4,
@@ -37,12 +37,16 @@ const components = {
     },
   },
   Text: {
+    baseStyle: (props) => ({
+      fontSize: {base: "lg", md: "2xl"},
+    }),
     variants: {
       indented: {
         textIndent: "1rem",
         textAlign: "justify",
       },
       year: {
+        fontSize: {base: "md", md: "lg"},
         fontWeight: "bold",
         textIndent: "1rem",
       },

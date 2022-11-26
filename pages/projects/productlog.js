@@ -14,7 +14,7 @@ import { Grow, SlideIn } from "components/animated";
 const ProductLog = () => {
 
     return (
-        <Main title='Product Log'>
+        <Main titleText='Product Log'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>
