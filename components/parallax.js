@@ -5,9 +5,20 @@
  * @since 11/25/2022
  **/
 
-import { Box, Heading, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import { TriangleDownIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Heading,
+  Link,
+  Image,
+  keyframes,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { SlideIn } from "./animated";
 import ThreeLanding from "./threeLanding";
+import NextLink from "next/link";
 
 const Parallax = ({ children }) => {
   const layer0 = "/images/parallax/layer0.png";
@@ -19,8 +30,21 @@ const Parallax = ({ children }) => {
   const lightlayer2 = "/images/parallax/light_layer2.png";
   const lightlayer3 = "/images/parallax/light_layer3.png";
 
+  const kf = keyframes`
+  0% {
+    transform: scale(1.0);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.75;
+  }
+  `;
+  const animation = `${kf} 1s ease-in-out infinite alternate`;
+
   return (
     <Box
+      id="parallax"
       sx={{
         w: "100%",
         h: "100vh",
@@ -123,7 +147,7 @@ const Parallax = ({ children }) => {
                 Devin Arena
               </Heading>
               <Text fontSize={{ base: "lg", md: "2xl" }}>
-                Student and Software Engineer
+                Software Engineer
               </Text>
             </Box>
             <Box>
@@ -134,12 +158,44 @@ const Parallax = ({ children }) => {
                 borderStyle="solid"
                 borderColor="blue.700"
                 borderRadius="50%"
-                maxWidth={{base: 150, lg: 250}}
+                maxWidth={{ base: 150, lg: 250 }}
                 mt={3}
               ></Image>
             </Box>
           </Box>
         </SlideIn>
+
+        <Box
+          as={motion.div}
+          animation={animation}
+          sx={{
+            position: "absolute",
+            bottom: 5,
+          }}
+        >
+          <Link
+            onClick={() => {
+              console.log(window.innerHeight);
+              document.getElementById("parallax").scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth",
+              });
+            }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            About
+            <TriangleDownIcon
+              sx={{
+                fontSize: 36,
+              }}
+            />
+          </Link>
+        </Box>
       </Box>
 
       <Box
