@@ -109,7 +109,7 @@ const Home = () => {
               <UnorderedList>
                 <ListItem><Text>My favorite programming language is C.</Text></ListItem>
                 <ListItem><Text>My favorite projects to work on are compilers and interpreters.</Text></ListItem>
-                <ListItem><Text>I can solve a Rubik's cube in {"<"} 30 seconds (PB: 11.47 seconds)</Text></ListItem>
+                <ListItem><Text>I can solve a Rubik&apos;s cube in {"<"} 30 seconds (PB: 11.47 seconds)</Text></ListItem>
                 <ListItem><Text>Soccer, music composition, and playing the piano are some of my other hobbies.</Text></ListItem>
               </UnorderedList>
             </Box>
