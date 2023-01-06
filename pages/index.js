@@ -9,6 +9,7 @@ import {
   ListItem,
   Link,
   Image,
+  UnorderedList,
 } from "@chakra-ui/react";
 import { VscGithub } from "react-icons/vsc";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -103,9 +104,14 @@ const Home = () => {
           <SlideIn delay={1.2} time={1} direction="left">
             <Box>
               <Heading as="h3" variant="sectionTitle">
-                Other Hobbies
+                Fun Facts :)
               </Heading>
-              <Text>Game Development, Web Development, Linux, Programming Languages, Soccer, Speedcubing, Writing Music</Text>
+              <UnorderedList>
+                <ListItem><Text>My favorite programming language is C.</Text></ListItem>
+                <ListItem><Text>My favorite projects to work on are compilers and interpreters.</Text></ListItem>
+                <ListItem><Text>I can solve a Rubik's cube in {"<"} 30 seconds (PB: 11.47 seconds)</Text></ListItem>
+                <ListItem><Text>Soccer, music composition, and playing the piano are some of my other hobbies.</Text></ListItem>
+              </UnorderedList>
             </Box>
           </SlideIn>
 
