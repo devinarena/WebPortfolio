@@ -8,7 +8,7 @@
 import { Box, position } from "@chakra-ui/react";
 import { useTexture } from "@react-three/drei";
 import { useThree, Canvas, useFrame } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
+import { memo, useEffect, useRef } from "react";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import css from "./styles/images.module.css";
 
@@ -89,4 +89,4 @@ const Cube = (props) => {
   );
 };
 
-export default ThreeLanding;
+export default memo(ThreeLanding);

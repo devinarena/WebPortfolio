@@ -22,10 +22,25 @@ const SlideIn = ({ children, delay, time, direction }) => {
     else if (direction == 'right')
         ix = -10;
 
-
     return (
         <AnimatedDiv initial={{ x: ix, opacity: 0 }} animate={{ x: fx, opacity: 1 }}
-            transition={{ duration: time, delay }}>
+            transition={{ duration: time, delay }} animation={{ delay: delay }} >
+            {children}
+        </AnimatedDiv>
+    );
+};
+
+const SlideInManual = ({ children, direction, percentage }) => {
+    let ix = 0, fx = 0;
+    if (direction === 'left')
+        ix = 50;
+    else if (direction == 'right')
+        ix = -50;
+
+    let x = (ix - fx) * percentage;
+
+    return (
+        <AnimatedDiv transform={"translateX(" + x + "px)"} opacity={1.0 - percentage} className="slideInManual" >
             {children}
         </AnimatedDiv>
     );
@@ -41,4 +56,4 @@ const Grow = ({ children, delay, time }) => {
     );
 };
 
-export { SlideIn, Grow };
+export { SlideIn, SlideInManual, Grow };

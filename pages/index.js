@@ -16,10 +16,11 @@ import { AiFillLinkedin } from "react-icons/ai";
 import NextLink from "next/link";
 import ExperienceEntry from "components/expentry";
 import Main from "components/layouts/main";
-import { SlideIn } from "components/animated";
+import { SlideIn, SlideInManual } from "components/animated";
 import ThreeLanding from "components/threeLanding";
 import Parallax from "components/parallax";
 import Footer from "components/footer";
+import { useCallback, useEffect, useState } from "react";
 
 /**
  * @file index.js
@@ -28,6 +29,31 @@ import Footer from "components/footer";
  * @description The homepage for my web portfolio.
  */
 const Home = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+  const [offsets, setOffsets] = useState([]);
+
+  const handleScroll = () => {
+    const position = document.getElementById("parallax").scrollTop;
+    setScrollY(position);
+  };
+
+  useEffect(() => {
+    if (offsets.length === 0) {
+      for (const slider of document.getElementsByClassName("slideInManual")) {
+        setOffsets((prev) => prev.concat(slider.offsetTop));
+      }
+    }
+
+    document.getElementById("parallax").addEventListener("scroll", handleScroll);
+
+    return () => document.getElementById("parallax").removeEventListener("scroll", handleScroll);
+  }, [handleScroll, setOffsets]);
+
+  /**
+   * Listener for the scroll effect
+   */
+
   return (
     <Main titleText="Homepage" noFooter={true}>
       <Parallax>
@@ -42,7 +68,7 @@ const Home = () => {
           alignItems="start"
           justifyContent="space-between"
         >
-          <SlideIn delay={0.4} time={1} direction="left">
+          <SlideInManual direction="left" percentage={1 - Math.min(scrollY / offsets[0], 1.0)}>
             <Box>
               <Heading as="h3" variant="sectionTitle">
                 About
@@ -70,9 +96,9 @@ const Home = () => {
                 </NextLink>
               </Box>
             </Box>
-          </SlideIn>
+          </SlideInManual>
 
-          <SlideIn delay={0.8} time={1} direction="right">
+          <SlideInManual direction="right" percentage={1 - Math.min(scrollY / offsets[1], 1.0)}>
             <Box>
               <Heading as="h3" variant="sectionTitle">
                 Education &amp; Experience
@@ -99,9 +125,9 @@ const Home = () => {
                 </NextLink>
               </Box>
             </Box>
-          </SlideIn>
+          </SlideInManual>
 
-          <SlideIn delay={1.2} time={1} direction="left">
+          <SlideInManual direction="left" percentage={1 - Math.min(scrollY / offsets[2], 1.0)}>
             <Box>
               <Heading as="h3" variant="sectionTitle">
                 Fun Facts :)
@@ -113,9 +139,9 @@ const Home = () => {
                 <ListItem><Text>Soccer, music composition, and playing the piano are some of my other hobbies.</Text></ListItem>
               </UnorderedList>
             </Box>
-          </SlideIn>
+          </SlideInManual>
 
-          <SlideIn delay={1.6} time={1} direction="right">
+          <SlideInManual direction="right" percentage={1 - Math.min(scrollY / offsets[3], 1.0)}>
             <Box>
               <Heading as="h3" variant="sectionTitle">
                 Contact
@@ -147,7 +173,7 @@ const Home = () => {
                 </ListItem>
               </List>
             </Box>
-          </SlideIn>
+          </SlideInManual>
         </Container>
 
         <Footer />
