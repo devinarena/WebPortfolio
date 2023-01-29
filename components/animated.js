@@ -39,8 +39,6 @@ const SlideInManual = ({ children, direction, percentage }) => {
 
     let x = (ix - fx) * percentage;
 
-    console.log(percentage);
-
     return (
         <AnimatedDiv transform={"translateX(" + x + "px)"} opacity={1.0 - percentage} className="slideInManual" >
             {children}
