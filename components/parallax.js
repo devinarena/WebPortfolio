@@ -51,6 +51,17 @@ const Parallax = ({ children }) => {
         overflowY: "auto",
         overflowX: "hidden",
         perspective: "10px",
+        "&::-webkit-scrollbar": {
+          background: useColorModeValue("white", "black"),
+          width: "10px",
+        },
+        "&::-webkit-scrollbar-track": {
+          width: "12px",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: useColorModeValue("gray.400", "gray.600"),
+          borderRadius: "24px",
+        },
       }}
     >
       <Box

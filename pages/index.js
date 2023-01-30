@@ -41,11 +41,11 @@ const Home = () => {
   useEffect(() => {
     if (offsets.length === 0) {
       for (const slider of document.getElementsByClassName("slideInManual")) {
-        setOffsets((prev) => [...prev, slider.offsetTop - 64]);
+        setOffsets((offsets) => [...offsets, slider.offsetTop]);
       }
     }
 
-    var doc = document.getElementById("parallax");
+    let doc = document.getElementById("parallax");
     doc.addEventListener("scroll", handleScroll);
 
     return () => {
