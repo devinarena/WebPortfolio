@@ -73,7 +73,7 @@ const Home = () => {
           justifyContent="space-between"
         >
           <SlideInManual direction="left" percentage={1 - Math.min(scrollY / offsets[0], 1.0)}>
-            <Box>
+            <Box sx={{ py: 4 }}>
               <Heading as="h3" variant="sectionTitle">
                 About
               </Heading>
@@ -103,7 +103,7 @@ const Home = () => {
           </SlideInManual>
 
           <SlideInManual direction="right" percentage={1 - Math.min(scrollY / offsets[1], 1.0)}>
-            <Box>
+            <Box sx={{ py: 4 }}>
               <Heading as="h3" variant="sectionTitle">
                 Education &amp; Experience
               </Heading>
@@ -131,8 +131,8 @@ const Home = () => {
             </Box>
           </SlideInManual>
 
-          <SlideInManual direction="left" percentage={1 - Math.min(scrollY / offsets[2], 1.0)}>
-            <Box>
+          <SlideInManual direction="left" percentage={1 - Math.min(scrollY / offsets[2], 1.0)} >
+            <Box sx={{ py: 4 }}>
               <Heading as="h3" variant="sectionTitle">
                 Fun Facts :)
               </Heading>
@@ -146,7 +146,7 @@ const Home = () => {
           </SlideInManual>
 
           <SlideInManual direction="right" percentage={1 - Math.min(scrollY / offsets[3], 1.0)}>
-            <Box>
+            <Box sx={{py: 4}}>
               <Heading as="h3" variant="sectionTitle">
                 Contact
               </Heading>
