@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Test</title>
+    <style>
+        body {
+            background: #999999;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .cursor {
+            position: fixed;
+            z-index: 99999;
+            pointer-events: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.25);
+            box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+            animation: pulse 2s infinite ease alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.5);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor"></div>
+</body>
+
+<script type="text/javascript">
+    document.addEventListener('mousemove', function (e) {
+        var cursor = document.getElementsByClassName('cursor')[0];
+        cursor.style.top = (e.pageY - 50) + 'px';
+        cursor.style.left = (e.pageX - 20) + 'px';
+    });
+</script>
+
+</html>

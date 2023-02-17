@@ -10,6 +10,7 @@ import {
   Link,
   Image,
   UnorderedList,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { VscGithub } from "react-icons/vsc";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -31,12 +32,17 @@ import { useCallback, useEffect, useState } from "react";
 const Home = () => {
 
   const [scrollY, setScrollY] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [offsets, setOffsets] = useState([]);
 
   const handleScroll = () => {
     const position = document.getElementById("parallax").scrollTop;
     setScrollY(position);
   };
+
+  const handleMouse = e => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  }
 
   useEffect(() => {
     if (offsets.length === 0) {
@@ -47,10 +53,13 @@ const Home = () => {
 
     let doc = document.getElementById("parallax");
     doc.addEventListener("scroll", handleScroll);
+    doc.addEventListener("mousemove", handleMouse);
 
     return () => {
-      if (doc)
+      if (doc) {
         doc.removeEventListener("scroll", handleScroll);
+        doc.removeEventListener("mousemove", handleMouse);
+      }
     }
   }, [handleScroll, setOffsets]);
 
@@ -146,7 +155,7 @@ const Home = () => {
           </SlideInManual>
 
           <SlideInManual direction="right" percentage={1 - Math.min(scrollY / offsets[3], 1.0)}>
-            <Box sx={{py: 4}}>
+            <Box sx={{ py: 4 }}>
               <Heading as="h3" variant="sectionTitle">
                 Contact
               </Heading>
@@ -182,6 +191,17 @@ const Home = () => {
 
         <Footer />
       </Parallax>
+
+      <Box sx={{
+        display: useColorModeValue("none", { base: "none", md: "block" }),
+        position: "fixed", zIndex: 999,
+        pointerEvents: "none", w: 80, h: 80,
+        borderRadius: "50%", bg: "radial-gradient(#fff, #333)",
+        filter: "blur(20px)",
+        top: `${mousePosition.y - 160}px`, left: `${mousePosition.x - 160}px`, opacity: 0.025
+      }}>
+
+      </Box>
     </Main>
   );
 };
