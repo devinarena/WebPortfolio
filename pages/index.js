@@ -87,11 +87,11 @@ const Home = () => {
                 About
               </Heading>
               <Text variant="indented">
-                My name is Devin Arena, and I&apos;m currently a student and
-                software engineer based in Naples, Florida. I currently attend
-                Florida Gulf Coast University pursuing a Bachelor&apos;s of
-                Science in Software Engineering. I&apos;m interested in web
-                development and embedded systems, especially compilers. In my free time I enjoy
+                My name is Devin Arena, and I&apos;m currently a
+                software engineer based in Naples, Florida. I attended
+                Florida Gulf Coast University and received a Bachelor&apos;s of
+                Science in Software Engineering. I&apos;m interested in backend
+                development and embedded systems. In my free time I enjoy
                 building projects related to programming languages and working with Linux.
               </Text>
 
@@ -116,8 +116,8 @@ const Home = () => {
               <Heading as="h3" variant="sectionTitle">
                 Education &amp; Experience
               </Heading>
-              <ExperienceEntry date="Aug. 2019 - Present">
-                Pursuing Bachelor&apos;s of Science at Florida Gulf Coast
+              <ExperienceEntry date="Aug. 2019 - May 2023">
+                Bachelor&apos;s of Science at Florida Gulf Coast
                 University
               </ExperienceEntry>
               <ExperienceEntry date="Jan. 2022 - May 2022">
