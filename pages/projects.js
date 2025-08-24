@@ -71,7 +71,7 @@ const Projects = () => {
           </Box>
         </SlideIn>
 
-        <SimpleGrid mt={8} columns={[1, 2, 2, 3]} gap={5}>
+        <SimpleGrid mt={8} columns={[1, 2, 2, 2]} gap={5}>
           <Grow delay={0.4} time={0.8}>
             <ProjectItem image={rouxsolver} title="RouxSolver" id="rouxsolver">
               An interactive 3D speedcubing simulator with a built in Roux
@@ -83,22 +83,7 @@ const Projects = () => {
               A C++ command-line interface for graphing equations.
             </ProjectItem>
           </Grow>
-          {/* <Grow delay={0.6} time={0.8}>
-            <ProjectItem
-              image={pixelbackground}
-              title="Pixel Background"
-              id="pixelbackground"
-            >
-              Generate amazing pixel art wallpapers using images from your
-              favorite subreddits.
-            </ProjectItem>
-          </Grow> */}
           <Grow delay={0.8} time={0.8}>
-            <ProjectItem image={apptracker} title="AppTracker" id="apptracker">
-              A web application for tracking internship/job applications.
-            </ProjectItem>
-          </Grow>
-          <Grow delay={1.0} time={0.8}>
             <ProjectItem
               image={pixelstriker}
               title="Pixel Striker"
@@ -107,12 +92,7 @@ const Projects = () => {
               An endless arcade-style mobile soccer game.
             </ProjectItem>
           </Grow>
-          <Grow delay={1.2} time={0.8}>
-            <ProjectItem image={productlog} title="Product Log" id="productlog">
-              A mobile application for tracking product purchases and collections.
-            </ProjectItem>
-          </Grow>
-          <Grow delay={1.4} time={0.8}>
+          <Grow delay={1.0} time={0.8}>
             <ProjectItem
               image={minesweeperAI}
               title="Minesweeper AI"

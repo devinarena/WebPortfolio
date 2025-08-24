@@ -124,6 +124,12 @@ const Home = () => {
                 Embedded Software Engineering Intern at Syracuse Research
                 Corporation Inc.
               </ExperienceEntry>
+              <ExperienceEntry date="May. 2023 - Feb. 2025">
+                Software Engineer I at Mastercard  
+              </ExperienceEntry>
+              <ExperienceEntry date="Feb. 2025 - Present">
+                Software Engineer II at Mastercard  
+              </ExperienceEntry>
               <Box mt={3} align="center">
                 <NextLink legacyBehavior href="/Resume.pdf" passHref>
                   <Button
@@ -146,10 +152,10 @@ const Home = () => {
                 Fun Facts :)
               </Heading>
               <UnorderedList>
-                <ListItem><Text>My favorite programming language is C.</Text></ListItem>
-                <ListItem><Text>My favorite projects to work on are compilers and interpreters.</Text></ListItem>
+                <ListItem><Text>Favorite programming languages: Python, C, Rust.</Text></ListItem>
+                <ListItem><Text>My other hobbies: Soccer, Softball, Writing Music</Text></ListItem>
                 <ListItem><Text>I can solve a Rubik&apos;s cube in {"<"} 30 seconds (PB: 11.47 seconds)</Text></ListItem>
-                <ListItem><Text>Soccer, music composition, and playing the piano are some of my other hobbies.</Text></ListItem>
+                <ListItem><Text>I enjoy working on low-level projects, like compilers.</Text></ListItem>
               </UnorderedList>
             </Box>
           </SlideInManual>
